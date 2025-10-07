@@ -1,13 +1,54 @@
-1. Register (password must consisted of at least 6 digits)
+# 🏋️‍♂️ Body Act Gym Website
 
-2. Log in
+A custom dynamic website developed for Body Act Gym, featuring sections for services, exercises, nutrition, and contact information.  
+Built with PHP, MySQL, JavaScript and XML this project combines dynamic content, user interaction, and responsive design in a single full-stack web solution.
 
-3. When logged	 in 2 more categories  are displayed  in the nav bar. 
-The Exercises page contains  an XML file with hyperlinks  to other site in order to display how to do some exercises. 
-The Calories page fetches data from a custom API (wait to load the products because  the table is consisted of 22.755 rows).
+---
 
-4. The service’s images and the social media icons are links to other pages.
+## 🌐 Overview
 
-5. Reset password (optional).
+The Body Act Gym Website is a full-stack web application designed to present the gym’s services and fitness resources dynamically.  
+It includes:
+- XML-based exercise data integration  
+- Nutrition tracking from CSV files  
+- PHP backend for user interaction and management  
 
-6. Log out.
+---
+
+## ⚙️ Features
+
+- 🧍‍♀️ Home & Services pages – Overview of gym facilities and programs  
+- 🏋️ Exercises section – Dynamic exercise listings parsed from XML  
+- 🥗 Nutrition page – Displays nutrition data loaded from CSV  
+- 🔑 User authentication – Login and password reset functionality  
+- 💬 Contact form – PHP-based form submission  
+- 📱 Responsive design – Adapted for mobile and desktop use  
+
+---
+
+## 🧰 Tech Stack
+
+- Languages PHP, JavaScript, HTML, CSS  
+- Database MySQL  
+- Data Integration XML & CSV  
+- APIs ACE Fitness Exercise Library (XML feed)  
+- Version Control Git / GitHub  
+
+---
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/KostasRoulias/Body-Act-Gym-Website.git
+
+
+2. Move files to your local PHP server directory (e.g. htdocs if using XAMPP).
+
+3. Import the provided SQL file into your MySQL database.
+
+4. Update database connection settings in function.php.
+
+5. Start your server and visit:
+   ```bash
+    http://localhost/Body-Act-Gym-Website/home.php
