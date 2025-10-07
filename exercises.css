@@ -1,0 +1,47 @@
+
+.body{
+    background-image: linear-gradient(to right,#000000, #3d3d3d, #000000);
+}
+#exercise-library{
+    padding: 120px 150px 30px 150px;
+   
+}
+#exercise-library ul{
+    color: #d1d1d1;
+    list-style-type: none; 
+    padding: 0;
+}
+#exercise-library li {
+    margin-bottom: 20px; 
+}
+#exercise-library a {
+    color: #009b70; 
+}
+#exercise-library a:hover {
+    text-decoration: underline; 
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border-radius: 5px;
+    max-width: 100%; 
+    height: auto;
+    width: 120px;
+    max-height: 220px;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+#pagination button {
+    width: 50px;
+    margin:  5px; /* Add space between buttons */
+}
+footer {
+    margin-top: auto;  
+}
+
+

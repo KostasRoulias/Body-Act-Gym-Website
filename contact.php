@@ -1,0 +1,127 @@
+<?php
+
+session_start();
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./home.css">
+  <link rel="stylesheet" href="./contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo"><a href="./home.php"> <img src="./images/bodyact.png" alt="logo"></a> </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="./home.php">Home</a></li>
+          <li><a href="./about.php">About Us</a></li>
+          <li><a href="./contact.php">Contact</a></li>
+          <li id="exercises" class="exercises"><a href="./exercises.php">Exercises</a></li>
+          <li id="calories" class="calories"><a href="./displayNutrition.php">Calories</a></li>
+          <div class="buttons">
+            <li><a href="./delete.php"><button type="submit" class="logoutBtn" id="logoutBtn">Logout</button></a></li>
+          </div>
+          <script>
+            const loggedIn = <?php echo isset($_SESSION['loggedin']) ? 'true' : 'false'; ?>;
+            console.log(loggedIn);
+          </script>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact -->
+    <section class="contact">
+      <div class="ContactForm">
+        <form target="_blank" action="https://formsubmit.co/kostasroulias92@gmail.com" method="post">
+          <h2>Send Message</h2>
+          <div class="inputBox">
+            <input type="text" name="name" required="required">
+            <span>Full name</span>
+          </div>
+          <div class="inputBox">
+            <input type="email" name="email" required="required">
+            <span>email</span>
+          </div>
+
+          <div class="inputBox">
+            <textarea required="required" name="message"></textarea>
+            <span>Type your Message...</span>
+          </div>
+
+          <div class="inputBox">
+            <label for="Problem" style="color: #fff;">About</label><br>
+            <select class="selected" name="Problem">
+              <option>Book a trial workout</option>
+              <option>Login problem</option>
+              <option>Register problem</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="inputBox send">
+            <input type="submit" name="" value="Send">
+          </div>
+        </form>
+      </div>
+  </div>
+  </section>
+
+
+
+
+  <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+  </div>
+  <footer>
+    <div class="footer1-container">
+      <div class="footer-content">
+        <h3>Contact Us</h3>
+        <p> <span style="text-decoration: underline;">Email: </span>bodyactstudio@gmail.com</p>
+        <p> <span style="text-decoration: underline;">Phone: </span><br>211-735 6915</p>
+        <p> <span style="text-decoration: underline;">Address: </span><br>Kallergi 27, Melissia</p>
+      </div>
+      <div class="footer-content">
+        <h3>Quick Links</h3>
+        <ul class="list1">
+          <li><a href="./home.php">Home</a></li>
+          <li><a href="./about.php">About Us</a></li>
+          <li><a href="./contact.php">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3>Follow Us</h3>
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/p/body_act_studio-100076294230506/"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/body_act_studio/"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <p>&copy; 2024 2024 BodyAct. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./home1.js" charset="utf-8"></script>
+  <script src="./contact.js" charset="utf-8"></script>
+</body>
+
+</html>
